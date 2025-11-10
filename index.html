@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday, My Dear Sister 🎂</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(circle at 10% 20%, #ffe6f0, #ffd1e6 20%, #fff7fb 40%),
+                linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+    color:#111827;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;
+    padding:24px;
+  }
+
+  /* Card */
+  .card{
+    width:100%;max-width:980px;border-radius:18px;overflow:hidden;
+    background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);
+    box-shadow:0 20px 50px rgba(16,24,40,0.12);
+    display:grid;grid-template-columns:1fr 420px;gap:0;
+  }
+
+  /* Left area: message */
+  .left{
+    padding:48px 40px; display:flex;flex-direction:column;gap:18px;align-items:flex-start;
+  }
+  h1{font-size:34px;color:#ff2e8b;margin-bottom:6px;letter-spacing:-0.5px}
+  p.lead{font-size:16px;color:#374151;line-height:1.45}
+  .typing{font-weight:700;color:#111827;display:inline-block;border-right:3px solid rgba(0,0,0,0.12);white-space:nowrap;overflow:hidden;width:0;animation:typing 4.5s steps(40,end) forwards, blink 0.9s step-end infinite}
+  @keyframes typing{to{width:100%}}
+  @keyframes blink{50%{border-color:transparent}}
+
+  /* Buttons */
+  .controls{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    background:#ff2e8b;color:white;border:none;padding:12px 18px;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:0 8px 20px rgba(255,46,139,0.18);
+  }
+  .btn.secondary{background:transparent;color:#ff2e8b;border:1px solid rgba(255,46,139,0.12);box-shadow:none}
+
+  /* Right area: visual */
+  .right{background:linear-gradient(180deg,#fff0fb,#ffeef8);padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+  .visual{width:320px;height:320px;border-radius:12px;background:linear-gradient(135deg,#fff,#ffe4f6);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 10px 30px rgba(16,24,40,0.06)}
+  .badge{position:absolute;top:16px;left:16px;background:#ff2e8b;color:white;padding:8px 12px;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 6px 18px rgba(255,46,139,0.12)}
+  .visual h2{font-size:20px;color:#6b21a8;margin:0}
+  .small{font-size:13px;color:#6b7280}
+
+  /* balloons & confetti */
+  .balloon{position:absolute;bottom:-120px;width:54px;height:74px;border-radius:50%;box-shadow:inset -6px -10px 20px rgba(0,0,0,0.08)}
+  @keyframes floatUp{0%{transform:translateY(0) scale(1);opacity:1}100%{transform:translateY(-120vh) scale(1.2);opacity:0}}
+  .confetti{position:absolute;width:10px;height:10px;border-radius:2px}
+
+  /* final message overlay */
+  .overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(2,6,23,0.3),rgba(2,6,23,0.5));visibility:hidden;opacity:0;transition:opacity .5s,visibility .5s}
+  .overlay.active{visibility:visible;opacity:1}
+  .panel{background:linear-gradient(180deg,#ffeff8,#fff);padding:28px;border-radius:14px;box-shadow:0 30px 90px rgba(7,10,25,0.45);text-align:center;max-width:640px}
+  .finalTitle{font-size:28px;color:#b91c8a;font-weight:800;margin-bottom:10px;text-shadow:0 6px 30px rgba(185,28,138,0.12)}
+  .finalMsg{font-size:18px;color:#374151;margin-bottom:18px}
+  .fromBro{font-size:22px;color:#111827;font-weight:800;animation:glow 2s infinite alternate}
+  @keyframes glow{from{text-shadow:0 0 8px rgba(255,46,139,0.24)}to{text-shadow:0 0 20px rgba(255,46,139,0.4)}}
+
+  /* responsive */
+  @media(max-width:880px){
+    .card{grid-template-columns:1fr;max-width:720px}
+    .right{order:-1}
+    .visual{width:86%;height:260px}
+  }
+  @media(max-width:520px){
+    body{padding:14px}
+    h1{font-size:22px}
+    .visual{height:220px}
+  }
+</style>
+</head>
+<body>
+
+<div class="card" aria-live="polite">
+  <div class="left" role="main">
+    <div style="display:flex;gap:12px;align-items:center">
+      <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(180deg,#fff,#ffeef8);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(16,24,40,0.04)">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v6" stroke="#ff2e8b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 8c0 3 6 8 6 8s6-5 6-8V6" stroke="#ff2e8b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <div style="font-size:13px;color:#6b7280">Special Surprise</div>
+        <h1>Happy Birthday, My Dear Sister 🎂</h1>
+      </div>
+    </div>
+
+    <p class="lead">Tap <strong>Play Music</strong> to start the experience (mobile browsers require a user gesture). Then enjoy the animated balloons, confetti and the final heartfelt message.</p>
+
+    <div class="controls" aria-hidden="false">
+      <button id="playBtn" class="btn" type="button">Play Music & Start Surprise</button>
+      <button id="skipBtn" class="btn secondary" type="button">Skip Music — Show Surprise</button>
+    </div>
+
+    <div style="margin-top:10px;font-size:13px;color:#6b7280">Tip: Host this folder on GitHub Pages to get an HTTPS link for seamless mobile camera/QR experiences.</div>
+  </div>
+
+  <div class="right" aria-hidden="true">
+    <div class="visual" role="img" aria-label="Birthday visual">
+      <div class="badge">🎈 Surprise</div>
+      <div style="text-align:center">
+        <h2 style="margin-bottom:6px">To: Your Sister</h2>
+        <div class="small">A special day, a special surprise — from your brother.</div>
+      </div>
+      <!-- balloons will be injected here -->
+    </div>
+    <div style="font-size:13px;color:#6b7280">Background music: Soft Guitar</div>
+  </div>
+</div>
+
+<!-- final overlay -->
+<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="panel" role="document">
+    <div class="finalTitle">💖 Happy Birthday!</div>
+    <div class="finalMsg" id="finalMsg">You are my sunshine in every storm — wishing you all the joy and love today and always.</div>
+    <div class="fromBro">From Your Brother ❤️</div>
+    <div style="margin-top:12px"><button id="closeBtn" class="btn">Close</button></div>
+  </div>
+</div>
+
+<!-- audio: soft guitar (hosted) -->
+<audio id="bgAudio" preload="auto" src="https://cdn.pixabay.com/download/audio/2021/12/15/audio_2c3f1b0c07.mp3?filename=soft-acoustic-guitar-133600.mp3"></audio>
+
+<script>
+/* PROFESSIONAL SURPRISE SCRIPT
+ - Play music on user gesture (mobile-friendly)
+ - Create floating balloons and confetti
+ - Show polished final overlay message
+ - Accessible basics (focus management)
+*/
+
+const playBtn = document.getElementById('playBtn');
+const skipBtn = document.getElementById('skipBtn');
+const overlay = document.getElementById('overlay');
+const bgAudio = document.getElementById('bgAudio');
+const closeBtn = document.getElementById('closeBtn');
+const visual = document.querySelector('.visual');
+
+function startExperience(playMusic = true){
+  // Play audio if requested (some browsers still require gesture)
+  if(playMusic){
+    bgAudio.currentTime = 0;
+    const p = bgAudio.play();
+    if(p !== undefined){ p.catch(()=>{/* autoplay blocked; user interaction required later */}); }
+  }
+  // Slight delay then launch balloons, then final message
+  spawnBalloons(24);
+  setTimeout(()=>spawnConfetti(110), 3800);
+  setTimeout(()=>showFinal(), 10000);
+}
+
+playBtn.addEventListener('click', ()=>startExperience(true));
+skipBtn.addEventListener('click', ()=>startExperience(false));
+
+/* balloons */
+function spawnBalloons(n=20){
+  for(let i=0;i<n;i++){
+    const b = document.createElement('div');
+    b.className = 'balloon';
+    b.style.left = (5 + Math.random()*90) + 'vw';
+    b.style.background = `linear-gradient(135deg, hsl(${Math.random()*360} 80% 70%), hsl(${Math.random()*360} 80% 60%))`;
+    b.style.width = (44 + Math.random()*26) + 'px';
+    b.style.height = (64 + Math.random()*36) + 'px';
+    b.style.animationDuration = (5 + Math.random()*5) + 's';
+    visual.appendChild(b);
+    // remove after animation
+    setTimeout(()=>{ try{ b.remove(); }catch(e){} }, 9500);
+  }
+}
+
+/* confetti */
+function spawnConfetti(count=80){
+  for(let i=0;i<count;i++){
+    const c = document.createElement('div');
+    c.className = 'confetti';
+    c.style.left = (Math.random()*92 + 4) + 'vw';
+    c.style.background = `hsl(${Math.random()*360} 90% 60%)`;
+    c.style.width = (6 + Math.random()*8) + 'px';
+    c.style.height = (6 + Math.random()*8) + 'px';
+    c.style.animationDuration = (1.8 + Math.random()*1.4) + 's';
+    document.body.appendChild(c);
+    setTimeout(()=>{ try{ c.remove(); }catch(e){} }, 3600);
+  }
+}
+
+/* final overlay */
+function showFinal(){
+  overlay.classList.add('active');
+  overlay.setAttribute('aria-hidden','false');
+  closeBtn.focus();
+}
+closeBtn.addEventListener('click', ()=>{
+  overlay.classList.remove('active');
+  overlay.setAttribute('aria-hidden','true');
+});
+
+/* accessibility: close overlay with escape */
+document.addEventListener('keydown', (e)=>{
+  if(e.key === 'Escape' && overlay.classList.contains('active')){
+    overlay.classList.remove('active');
+    overlay.setAttribute('aria-hidden','true');
+  }
+});
+</script>
+
+</body>
+</html>
